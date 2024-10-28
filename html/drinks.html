@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head starts here -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kutchi Beer - Bar Menu</title>
+    <!-- styles + bootstrap styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- icon/logo -->
+    <link rel="icon" href="../img/logo/file.ico" type="image/x-icon">
+  </head>
+  <!-- Body starts here -->
+  <body>
+    <header>
+      <nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-left">
+              <li><a href="../../index.html"><img src="../img/logo.jpeg" width="50px"></a></li>
+              <li><a href="drinks.html">Drinks</a></li>
+              <li><a href="pizza.html">Pizza</a></li>
+              <li><a href="bakery.html">Bakery</a></li>
+              <li><a href="rest.html">Restaurant</a></li>
+              <li><a href="order.html" class="order-button">Cart</a></li>
+            </ul><!-- #nav-list -->
+          </div><!-- .collapse .navbar-collapse -->
+        </div><!-- .container -->
+      </nav>
+    </header>
+
+    <main class="container" style="margin-top: 60px;">
+      <h1 class="text-center">Drinks</h1>
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="list-unstyled">
+            <li>
+              <div class="p-item-desc"> 
+              <img src="../img/juices/oj.png" class="pimg" alt="Orange juice">
+              <h4 class="p-title">Orange juice <br> <span class="price">$5.99</span> </h4>
+               <button class="btn btn-success btn-xs add-to-cart" data-item="Orange juice - $5.99">Add</button>
+              </div>
+            </li>
+            <li>
+              <div class="p-item-desc">
+              <img src="../img/juices/sc.png" class="pimg">
+              <h4 class="p-title">Sugar cane juice <br> <span class="price">$5.99</span> </h4>
+               <button class="btn btn-success btn-xs add-to-cart" data-item="Sugar cane juice - $5.99">Add</button>
+              </div>
+            </li>
+            <li>
+              <div class="p-item-desc">
+              <img src="../img/juices/bm.png" class="pimg">
+              <h4 class="p-title">Badam milk shake <br> <span class="price">$5.99</span> </h4>
+               <button class="btn btn-success btn-xs add-to-cart" data-item="Badam milk shake - $5.99">Add</button>
+              </div>
+            </li>
+            <li>
+              <div class="p-item-desc">
+              <img src="../img/juices/sm.png" class="pimg">
+              <h4 class="p-title">Strawberry milk shake<br> <span class="price">$5.99</span></h4>
+               <button class="btn btn-success btn-xs add-to-cart" data-item="Strawberry milk shake - $5.99">Add</button>
+              </div>
+            </li>
+            <li>
+              <div class="p-item-desc">
+              <img src="../img/juices/cm.png" class="pimg">
+              <h4 class="p-title">Chocolate milk shake<br><span class="price">$5.99</span></h4>
+              <button class="btn btn-success btn-xs add-to-cart" data-item="Chocolate milk shake - $5.99">Add</button>
+              </div>
+            </li>
+            <li>
+              <div class="p-item-desc">
+              <img src="../img/juices/mf.png" class="pimg">
+              <h4 class="p-title">Mix fruit shake <br><span class="price">$5.99</span> </h4>
+              <button class="btn btn-success btn-xs add-to-cart" data-item="Mix fruit shake - $5.99">Add</button>
+              </div>
+            </li>
+            <li>
+              <div class="p-item-desc">
+              <img src="../img/juices/hc.png" class="pimg">
+              <h4 class="p-title">Hot chocolate<br><span class="price">$5.99</span></h4>
+              <button class="btn btn-success btn-xs add-to-cart" data-item="Hot chocolate - $5.99">Add</button>
+            </li>
+            <li>
+              <div class="p-item-desc">
+              <img src="../img/juices/t.png" class="pimg">
+              <h4 class="p-title">Tea<br><span class="price">Free</span></h4>
+              <button class="btn btn-success btn-xs add-to-cart" data-item="Tea - Free">Add</button>
+            </li>
+            <li>
+              <div class="p-item-desc">
+              <img src="../img/juices/c.png" class="pimg">
+              <h4 class="p-title">Coffee<br><span class="price">Free</span></h4>
+              <button class="btn btn-success btn-xs add-to-cart" data-item="Coffee - Free">Add</button>
+            </li>
+            <li>
+              <div class="p-item-desc">
+              <img src="../img/juices/cd.png" class="pimg">
+              <h4 class="p-title">Cold drinks unlimited<br><span class="price">$4.99</span></h4>
+              <button class="btn btn-success btn-xs add-to-cart" data-item="Cold drinks unlimited - $4.99">Add</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <!-- JS plugins and scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../js/ajax-utils.js"></script>
+    <script src="../js/rest.js"></script>
+  </body>
+</html>

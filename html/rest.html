@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head starts here -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kutchi Beer - Restaurant Menu</title>
+    <!-- styles + bootstrap styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- icon/logo -->
+    <link rel="icon" href="../img/logo/file.ico" type="image/x-icon">
+    <style>
+      body {
+        position: relative;
+      }
+
+      .panel {
+        width: 80%;
+        margin: 10px auto;
+        background-color: transparent;
+      }
+
+      .panel-heading {
+        background-color: #f9f9f9;
+        padding: 10px 15px;
+      }
+
+      .panel-title a {
+        display: block;
+        text-align: left;
+        position: relative;
+        color: #333;
+        text-decoration: none;
+      }
+
+      .panel-title a::before {
+        position: absolute;
+        left: -25px;
+        top: 0;
+      }
+
+      .menu-list {
+        margin-bottom: 20px;
+      }
+
+      .menu-list li {
+        margin-bottom: 8px;
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <!-- Body starts here -->
+  <body data-spy="scroll" data-target=".sidebar" data-offset="70">
+    <header>
+      <nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-left">
+              <li><a href="../../index.html"><img src="../img/logo.jpeg" width="50px"></a></li>
+              <li><a href="drinks.html">Drinks</a></li>
+              <li><a href="pizza.html">Pizza</a></li>
+              <li><a href="bakery.html">Bakery</a></li>
+              <li><a href="rest.html">Restaurant</a></li>
+              <li><a href="order.html" class="order-button">Cart</a></li>
+            </ul><!-- #nav-list -->
+          </div><!-- .collapse .navbar-collapse -->
+        </div><!-- .container -->
+      </nav>
+    </header>
+
+    <div class="container-fluid">
+    <main class="col-sm-12">
+      <div id="accordion" role="tablist">
+
+        <!-- Indo-American Menu -->
+        <div class="panel panel-default" style="margin-top: 25px;">
+          <div class="panel-heading" role="tab" id="headingIndoAmerican">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#collapseIndoAmerican" aria-expanded="false" aria-controls="collapseIndoAmerican" class="collapsed">
+                Indo-American Menu
+              </a>
+            </h4>
+          </div>
+          <div id="collapseIndoAmerican" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingIndoAmerican">
+            <div class="panel-body">
+              <ul class="menu-list">
+                <li>
+                  Pancake - $2.99
+                  <button class="btn btn-success btn-xs add-to-cart" data-item="Pancake - $2.99">Add</button>
+                </li>
+                <img src="../img/rest/ia/p.png" alt="Pancake" width="165" height="110">
+                <li>
+                  Chocolate Pancake - $4.99
+                  <button class="btn btn-success btn-xs add-to-cart" data-item="Chocolate Pancake - $4.99">Add</button>
+                </li>
+                <img src="../img/rest/ia/cp.png" alt="Chocolate Pancake" class="menu-item-image">
+                <li>
+                  Waffle - $2.99
+                  <button class="btn btn-success btn-xs add-to-cart" data-item="Waffle - $2.99">Add</button>
+                </li>
+                <img src="../img/rest/ia/w.png" alt="Waffle" class="menu-item-image">
+                <li>
+                  Chocolate Waffle - $4.99
+                  <button class="btn btn-success btn-xs add-to-cart" data-item="Chocolate Waffle - $4.99">Add</button>
+                </li>
+                <img src="../img/rest/ia/cw.png" alt="Chocolate Waffle" class="menu-item-image">
+                <li>
+                  Ice Cream Waffle - $5.99
+                  <button class="btn btn-success btn-xs add-to-cart" data-item="Ice Cream Waffle - $5.99">Add</button>
+                </li>
+                <img src="../img/rest/ia/icw.png" alt="Ice Cream Waffle" class="menu-item-image">
+                <li>
+                  Butter Bread - $2.99
+                  <button class="btn btn-success btn-xs add-to-cart" data-item="Butter Bread - $2.99">Add</button>
+                </li>
+                <img src="../img/rest/ia/bb.png" alt="Butter Bread" class="menu-item-image">
+                <li>
+                  Grilled Cheese Sandwich - $4.99
+                  <button class="btn btn-success btn-xs add-to-cart" data-item="Grilled Cheese Sandwich - $4.99">Add</button>
+                </li>
+                <img src="../img/rest/ia/gc.png" alt="Grilled Cheese" class="menu-item-image">
+              </ul>
+            </div>
+          </div>
+        </div>
+          
+
+        <!-- Appetizers -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingAppetizers">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#collapseAppetizers" aria-expanded="false" aria-controls="collapseAppetizers" class="collapsed">
+                Appetizers
+              </a>
+            </h4>
+          </div>
+          <div id="collapseAppetizers" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingAppetizers">
+            <div class="panel-body">
+              <ul class="menu-list">
+                <li>Hakka Noodles - $9.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Hakka Noodles - $9.99">Add</button>
+                </li>
+                <img src="../img/rest/a/h.png" alt="" width="165" height="110">
+                <li>Szechuan Hakka Noodles - $9.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Szechuan Hakka Noodles - $9.99">Add</button>
+                </li><img src="../img/rest/a/sh.png" alt="" width="165" height="110">
+                <li>Veg Spring Rolls (5) - $9.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Veg Spring Rolls (5) - $9.99">Add</button>
+                </li>
+                  <img src="../img/rest/a/vs.png" alt="" width="165" height="110">
+                <li>French Fries - $4.99 <button class="btn btn-success btn-xs add-to-cart" data-item="French Fries - $4.99">Add</button>
+                </li>
+                <img src="../img/rest/a/ff.png" alt="" width="165" height="110">
+                <li>Crispy Chili Potatoes - $11.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Crispy Chili Potatoes - $11.99">Add</button>
+                </li>
+                <img src="../img/rest/a/ccpo.png" alt="" width="165" height="110">
+                <li>Crispy Chili Baby Corn - $11.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Crispy Chili Baby Corn - $11.99">Add</button>
+                </li>
+                <img src="../img/rest/a/ccb.png" alt="" width="165" height="110">
+                <li>Crispy Chili Paneer - $11.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Crispy Chili Paneer - $11.99">Add</button>
+                </li>
+                <img src="../img/rest/a/ccpa.png" alt="" width="165" height="110">
+                <li>Gobhi Manchurian - $12.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Gobhi Manchurian - $12.99">Add</button>
+                </li>
+                <img src="../img/rest/a/gm.png" alt="" width="165" height="110">
+                <li>Veg Manchurian - $12.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Veg Manchurian - $12.99">Add</button>
+                </li>
+                <img src="../img/rest/a/vm.png" alt="" width="165" height="110">
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soups -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingSoups">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#collapseSoups" aria-expanded="false" aria-controls="collapseSoups" class="collapsed">
+                Soups
+              </a>
+            </h4>
+          </div>
+          <div id="collapseSoups" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSoups">
+            <div class="panel-body">
+              <ul class="menu-list">
+                <li>Sweet Corn Soup - $4.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Sweet Corn Soup - $4.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Manchow Soup - $4.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Manchow Soup - $4.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Hot and Sour Soup - $4.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Hot and Sour Soup - $4.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Tomato Soup - $4.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Tomato Soup - $4.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sandwiches -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingSandwiches">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#collapseSandwiches" aria-expanded="true" aria-controls="collapseSandwiches" class="collapsed">
+                Sandwiches
+              </a>
+            </h4>
+          </div>
+          <div id="collapseSandwiches" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSandwiches">
+            <div class="panel-body">
+              <ul class="menu-list">
+                <li>Avocado Toast - $4.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Avocado Toast - $4.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Grilled Cheese - $4.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Grilled Cheese - $4.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Cheese Sandwich - $4.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Cheese Sandwich - $4.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Cucumber Sandwich - $4.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Cucumber Sandwich - $4.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Stuffed Potato Sandwich - $7.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Stuffed Potato Sandwich - $7.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Bombay Veg Sandwich - $9.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Bombay Veg Sandwich - $9.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Extra Cheese Sandwich - $10.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Extra Cheese Sandwich - $10.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Parathas -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingParathas">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#collapseParathas" aria-expanded="false" aria-controls="collapseParathas" class="collapsed">
+                Parathas
+              </a>
+            </h4>
+          </div>
+          <div id="collapseParathas" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingParathas">
+            <div class="panel-body">
+              <ul class="menu-list">
+                <li>Aloo Stuffed Paratha - $5.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Aloo Stuffed Paratha - $5.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Paneer Paratha - $5.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Paneer Paratha - $5.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Onion Coriander Paratha - $5.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Onion Coriander Paratha - $5.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Gobi Paratha - $5.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Gobi Paratha - $5.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Naan - $1.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Naan - $1.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Butter Naan - $2.49 <button class="btn btn-success btn-xs add-to-cart" data-item="Butter Naan - $2.49">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Garlic Naan - $2.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Garlic Naan - $2.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Bullet Naan - $3.49 <button class="btn btn-success btn-xs add-to-cart" data-item="Bullet Naan - $3.49">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Poori (2) - $1.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Poori (2) - $1.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Special Thali - $9.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Special Thali - $9.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rice -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingRice">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#collapseRice" aria-expanded="false" aria-controls="collapseRice" class="collapsed">
+                Rice
+              </a>
+            </h4>
+          </div>
+          <div id="collapseRice" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingRice">
+            <div class="panel-body">
+              <ul class="menu-list">
+                <li>Rice - $2.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Rice - $2.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Jeera Rice - $3.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Jeera Rice - $3.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Matar Pulao - $3.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Matar Pulao - $3.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Kashmiri Pulao - $4.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Kashmiri Pulao - $4.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Vegetable Pulao - $5.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Vegetable Pulao - $5.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Dal Khichdi - $7.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Dal Khichdi - $7.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Veg Biryani - $7.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Veg Biryani - $7.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Paneer Biryani - $8.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Paneer Biryani - $8.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- South Indian -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingSI">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#collapseSI" aria-expanded="false" aria-controls="collapseSI" class="collapsed">
+                South Indian
+              </a>
+            </h4>
+          </div>
+          <div id="collapseSI" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSI">
+            <div class="panel-body">
+              <ul class="menu-list">
+                <li>Mysore Bonda - $2.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Rice - $2.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Sambar Idly - $3.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Jeera Rice - $3.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Uttapam - $3.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Matar Pulao - $3.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Pongal Vada - $4.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Kashmiri Pulao - $4.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Pesarattu Upma - $5.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Vegetable Pulao - $5.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dosas -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingDosas">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#collapseDosas" aria-expanded="false" aria-controls="collapseDosas" class="collapsed">
+                Dosas
+              </a>
+            </h4>
+          </div>
+          <div id="collapseDosas" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingDosas">
+            <div class="panel-body">
+              <ul class="menu-list">
+                <li>Ghee Dosa - $2.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Ghee Dosa - $2.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Cheese Dosa - $3.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Cheese Dosa - $3.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Onion Dosa - $3.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Onion Dosa - $3.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Masala Dosa - $4.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Masala Dosa - $4.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Podi Dosa - $5.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Podi Dosa - $5.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Rava Dosa - $5.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Rava Dosa - $5.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Rava Ghee Dosa - $5.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Rava Ghee Dosa - $5.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Mysore Masala Dosa - $5.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Mysore Masala Dosa - $5.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+
+        <!-- Dessert -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingDessert">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#collapseDessert" aria-expanded="false" aria-controls="collapseDessert" class="collapsed">
+                Dessert
+              </a>
+            </h4>
+          </div>
+          <div id="collapseDessert" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingDessert">
+            <div class="panel-body">
+              <ul class="menu-list">
+                <li>Gulab Jamun (2) - $2.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Gulab Jamun (2) - $2.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Kheer - $5.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Kheer - $5.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Jalebi - $5.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Jalebi - $5.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Rabdi - $5.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Rabdi - $5.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Ras Malai - $5.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Ras Malai - $5.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Fruit Custard - $5.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Fruit Custard - $5.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+                <li>Ice Cream - $4.99 <button class="btn btn-success btn-xs add-to-cart" data-item="Ice Cream - $4.99">Add</button></li>
+                <img src="../img/rest/" alt="" width="165" height="110">
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+    <!-- JS plugins and scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../js/ajax-utils.js"></script>
+    <script src="../js/rest.js"></script>
+  </body>
+</html>
