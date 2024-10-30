@@ -22,7 +22,8 @@ body {
 }
 
 .title {
-    font-size: 30px;
+    margin-right: 20px;
+    font-size: 50px;
     text-align: right;
     font-family: Ga_Maamli, sans-serif;
 }
