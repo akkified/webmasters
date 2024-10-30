@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Plate - Vegan Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap">
+	<style>
+		body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            position: fixed;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #76c7c0;
+        }
+
+        .hero {
+            background-image: url('hero.jpg'); /* Replace with your background image */
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero-text {
+            animation: fadeIn 2s;
+        }
+
+        .cta {
+            padding: 10px 20px;
+            background: #76c7c0;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .cta:hover {
+            background: #5da99a;
+        }
+
+        .featured-dishes {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .dish-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .dish img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .dish:hover img {
+            transform: scale(1.05);
+        }
+
+        .about {
+            display: flex;
+            padding: 60px 20px;
+        }
+
+        .about-content {
+            display: flex;
+            width: 100%;
+        }
+
+        .about img {
+            width: 50%;
+            border-radius: 10px;
+        }
+
+        .about-text {
+            padding: 20px;
+        }
+
+        .testimonials {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .testimonial-slider {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .newsletter {
+            padding: 40px 20px;
+            text-align: center;
+            background: #f9f9f9;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: #76c7c0;
+            color: white;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+        }
+
+        .subscribe-button {
+            background-color: #76c7c0;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+	</style>
+</head>
+<body>
+    <header>
+        <div class="logo">Green Plate</div>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Savor the Flavors of Nature</h1>
+            <a href="#menu" class="cta">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <section class="featured-dishes">
+        <h2>Featured Dishes</h2>
+        <div class="dish-grid">
+            <div class="dish">
+                <img src="dish1.jpg" alt="Dish 1">
+                <h3>Vegan Burrito</h3>
+                <p>A delicious mix of beans, rice, and fresh veggies.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="dish">
+                <img src="dish2.jpg" alt="Dish 2">
+                <h3>Quinoa Salad</h3>
+                <p>Refreshing quinoa salad with seasonal vegetables.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="dish">
+                <img src="dish3.jpg" alt="Dish 3">
+                <h3>Stuffed Peppers</h3>
+                <p>Colorful peppers filled with savory grains and spices.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <img src="about.jpg" alt="About Us">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>At Green Plate, we are committed to serving delicious, plant-based meals that nourish the body and soul. Our ingredients are sourced locally and sustainably.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <p>"The best vegan restaurant I've ever visited!"</p>
+                <span>- Happy Customer</span>
+            </div>
+            <div class="testimonial">
+                <p>"Incredible flavors and beautiful presentation!"</p>
+                <span>- Satisfied Diner</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h2>Join Our Community</h2>
+        <input type="email" placeholder="Enter your email" />
+        <button id="subscribe-button">Subscribe</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Green Plate | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
