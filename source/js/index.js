@@ -25,10 +25,10 @@ function changeImageBasedOnDayAndTime() {
     };
     const afternoonImages = {
         0: "source/img/deals/def.png",
-        1: "source/img/deals/l/lall.png",
-        2: "source/img/deals/l/lall.png",
-        3: "source/img/deals/l/lall.png",
-        4: "source/img/deals/l/lall.png",
+        1: "source/img/deals/def.png",
+        2: "source/img/deals/def.png",
+        3: "source/img/deals/def.png",
+        4: "source/img/deals/def.png",
         5: "source/img/deals/def.png",
         6: "source/img/deals/def.png"
     };
@@ -42,13 +42,13 @@ function changeImageBasedOnDayAndTime() {
         6: "source/img/deals/def.png"
     };
     const nightImages = {
-        0: "source/img/deals/d/dall.png",
-        1: "source/img/deals/d/dall.png",
-        2: "source/img/deals/d/dall.png",
-        3: "source/img/deals/d/dall.png",
-        4: "source/img/deals/d/dall.png",
-        5: "source/img/deals/d/dall.png",
-        6: "source/img/deals/d/dall.png"
+        0: "source/img/deals/def.png",
+        1: "source/img/deals/def.png",
+        2: "source/img/deals/def.png",
+        3: "source/img/deals/def.png",
+        4: "source/img/deals/def.png",
+        5: "source/img/deals/def.png",
+        6: "source/img/deals/def.png"
     };
 
     if (hours >= 8 && hours < 11) {
