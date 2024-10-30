@@ -221,7 +221,7 @@ ul.list-unstyled {
 
 .about-text {
     font-weight: bold;
-    max-width: 400px; 
+    width: 600px; 
     margin: 0 auto;   
     padding: 20px;    
     text-align: center; 
