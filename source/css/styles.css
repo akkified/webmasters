@@ -217,4 +217,10 @@ ul.list-unstyled {
         margin-top: 15px;
     }
 
+.about-text {
+    max-width: 400px; /* Adjust as needed */
+    margin: 0 auto;   /* Center align */
+    padding: 20px;    /* Adjust padding */
+    text-align: center; /* Optional: Center the text */
 }
+
