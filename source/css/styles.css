@@ -10,11 +10,20 @@
     font-family: neue;
     src: url(../fonts/neue/HelveticaNeueMedium.otf);
 }
+@font-face {
+    font-family: mamili;
+    src: url(../fonts/Ga_Maamli/GaMaamli-Regular.ttf);
+}
 
 body {
     background-color: white;
     margin: 0;
     font-family: neue, sans-serif;
+}
+
+#nav-list:last-child {
+    text-align: right;
+    font-family: mamili, sans-serif;
 }
 
 .page-title {
