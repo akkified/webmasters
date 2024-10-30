@@ -11,7 +11,7 @@
     src: url(../fonts/neue/HelveticaNeueMedium.otf);
 }
 @font-face {
-    font-family: mamili;
+    font-family: Ga_Maamli;
     src: url(../fonts/Ga_Maamli/GaMaamli-Regular.ttf);
 }
 
@@ -21,7 +21,7 @@ body {
     font-family: neue, sans-serif;
 }
 
-#nav-list:last-child {
+.title {
     text-align: right;
     font-family: mamili, sans-serif;
 }
