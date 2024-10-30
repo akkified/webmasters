@@ -217,11 +217,16 @@ ul.list-unstyled {
         margin-top: 15px;
     }
 
-.about-text {
-    font-weight: bold;
-    max-width: 400px; /* Adjust as needed */
-    margin: 0 auto;   /* Center align */
-    padding: 20px;    /* Adjust padding */
-    text-align: center; /* Optional: Center the text */
 }
 
+.about-text {
+    font-weight: bold;
+    max-width: 400px; 
+    margin: 0 auto;   
+    padding: 20px;    
+    text-align: center; 
+}
+.text-center {
+    text-align: center;
+    margin-left: auto;
+}
